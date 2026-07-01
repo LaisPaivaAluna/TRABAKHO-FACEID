@@ -1,0 +1,106 @@
+:root {
+    --primary: #2563eb;
+    --background: #f3f4f6;
+    --card: #ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    min-height:100vh;
+}
+
+header{
+    background: var(--primary);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+}
+
+.painel{
+    background:var(--card);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+#led{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:#555;
+    margin:auto;
+    transition:0.4s;
+}
+
+.ligado{
+    background:#00ff66;
+    box-shadow:
+    0 0 20px #00ff66,
+    0 0 40px #00ff66,
+    0 0 60px #00ff66;
+}
+
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.buttons button:first-child{
+    background:#22c55e;
+    color:white;
+}
+
+.buttons button:last-child{
+    background:#ef4444;
+    color:white;
+}
+
+#status{
+    font-weight:bold;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+}
+
+.atualizacao{
+    margin-top:10px;
+    color:#666;
+    font-size:14px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.painel{
+    min-width:320px;
+    text-align:center;
+}
